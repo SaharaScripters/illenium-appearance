@@ -46,7 +46,7 @@ Config.InvincibleDuringCustomization = true
 
 Config.PreventTrackerRemoval = true -- Disables "Scarf and Chains" section if the player has tracker
 Config.TrackerClothingOptions = {
-    drawable = 13,
+    drawable = 8,
     texture = 0
 }
 
