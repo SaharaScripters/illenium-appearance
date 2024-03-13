@@ -51,13 +51,13 @@ Config.TrackerClothingOptions = {
 }
 
 Config.NewCharacterSections = {
-    Ped = true,
+    Ped = false,
     HeadBlend = true,
     FaceFeatures = true,
     HeadOverlays = true,
-    Components = true,
-    Props = true,
-    Tattoos = true
+    Components = false,
+    Props = false,
+    Tattoos = false
 }
 
 Config.GenderBasedOnPed = true
