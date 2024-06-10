@@ -20,8 +20,8 @@ local skinData = {
 RegisterNetEvent("illenium-appearance:client:migration:load-qb-clothing-skin", function(playerSkin)
     local model = playerSkin.model
     model = model ~= nil and tonumber(model) or false
-    Citizen.CreateThread(function()
-        lib.requestModel(model, 1000)
+    CreateThread(function()
+        lib.requestModel(model, 10000)
         SetPlayerModel(cache.playerId, model)
         Wait(150)
         SetPedComponentVariation(cache.ped, 0, 0, 0, 2)

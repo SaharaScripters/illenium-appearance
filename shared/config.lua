@@ -5,7 +5,7 @@ Config.Debug = false
 Config.ClothingCost = 100
 Config.BarberCost = 100
 Config.TattooCost = 100
-Config.SurgeonCost = 1000000
+Config.SurgeonCost = 500000
 
 Config.ChargePerTattoo = true -- Charge players per tattoo. Config.TattooCost will become the cost of 1 tattoo. The cost can be overridden by adding `cost` key in shared/tattoos.lua for specific tattoos
 
@@ -64,7 +64,7 @@ Config.GenderBasedOnPed = true
 
 Config.AlwaysKeepProps = true
 
-Config.PersistUniforms = false -- Keeps Job / Gang Outfits on player reconnects / logout
+Config.PersistUniforms = true -- Keeps Job / Gang Outfits on player reconnects / logout
 Config.OnDutyOnlyClothingRooms = false -- Set to `true` to make the clothing rooms accessible only to players who are On Duty
 
 Config.BossManagedOutfits = false -- Allows Job / Gang bosses to manage their own job / gang outfits
@@ -101,29 +101,29 @@ Config.Blips = {
     ["clothing"] = {
         Show = true,
         Sprite = 73,
-        Color = 47,
-        Scale = 0.7,
+        Color = 5,
+        Scale = 0.5,
         Name = "Clothing Store",
     },
     ["barber"] = {
         Show = true,
         Sprite = 71,
-        Color = 0,
-        Scale = 0.7,
+        Color = 5,
+        Scale = 0.5,
         Name = "Barber",
     },
     ["tattoo"] = {
         Show = true,
         Sprite = 75,
-        Color = 4,
-        Scale = 0.7,
+        Color = 5,
+        Scale = 0.5,
         Name = "Tattoo Shop",
     },
     ["surgeon"] = {
         Show = true,
         Sprite = 102,
         Color = 4,
-        Scale = 0.7,
+        Scale = 0.2,
         Name = "Plastic Surgeon",
     }
 }
@@ -373,6 +373,19 @@ Config.Stores = {
         }
     },
     {
+        type = "clothing",
+        coords = vector4(974.03, 65.78, 116.16, 234),
+        size = vector3(4, 4, 4),
+        rotation = 45,
+        usePoly = false,
+        points = {
+            vector3(133.60948181152, -210.31390380859, 54.56),
+            vector3(125.8349609375, -228.48097229004, 54.56),
+            vector3(116.3140335083, -225.02020263672, 54.56),
+            vector3(122.56930541992, -207.83396911621, 54.56)
+        }
+    },
+    {
         type = "barber",
         coords = vector4(-813.63, -183.80, 37.57, 119),
         size = vector3(4, 4, 4),
@@ -453,6 +466,19 @@ Config.Stores = {
     {
         type = "barber",
         coords = vector4(-278.1, 6228.5, 31.70, 49.32),
+        size = vector3(4, 4, 4),
+        rotation = 45,
+        usePoly = false,
+        points = {
+            vector3(-280.29818725586, 6232.7265625, 30.7),
+            vector3(-273.06427001953, 6225.9692382812, 30.7),
+            vector3(-276.25280761719, 6222.4013671875, 30.7),
+            vector3(-282.98211669922, 6230.015625, 30.7)
+        }
+    },
+    {
+        type = "barber",
+        coords = vector4(953.27, 15.08, 117.36, 15),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
